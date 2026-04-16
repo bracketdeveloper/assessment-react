@@ -1,0 +1,199 @@
+.registration-section {
+    padding: var(--section-pad);
+}
+
+.reg-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    align-items: center;
+}
+
+.reg-visual {
+    position: relative;
+    min-height: 430px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url("../images/assistant-bot.png");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.reg-illustration {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    font-size: 6rem;
+    line-height: 1;
+}
+
+.reg-dot-1 {
+    width: 20px;
+    height: 20px;
+    top: -5%;
+    left: 0;
+}
+
+.reg-dot-2 {
+    width: 30px;
+    height: 30px;
+    top: -10%;
+    right: 30%;
+}
+
+.reg-dot-3 {
+    width: 20px;
+    height: 20px;
+    top: 15%;
+    right: -5%;
+}
+
+.reg-dot-4 {
+    width: 30px;
+    height: 30px;
+    top: 75%;
+    right: 55%;
+}
+
+.reg-dot-5 {
+    width: 20px;
+    height: 20px;
+    bottom:-20%;
+    left: 35%;
+}
+
+.reg-dot-6 {
+    width: 30px;
+    height: 30px;
+    bottom: 25%;
+    right: 5%;
+}
+
+.reg-dot-7 {
+    width: 20px;
+    height: 20px;
+    bottom: 35%;
+    right: 20%;
+}
+.reg-dot-8 {
+    width: 20px;
+    height: 20px;
+    top: -15%;
+    right: 65%;
+}
+
+.reg-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 48px;
+    gap: 24px;
+    background: var(--color-white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+}
+
+.reg-card h2 {
+    color: var(--color-black-dot);
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin-bottom: .75rem;
+}
+
+.reg-desc {
+    font-size: .9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.75rem;
+    line-height: 1.6;
+}
+
+
+.form-group {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+label {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--color-black-dot);
+}
+
+.required {
+    color: var(--color-error);
+    margin-left: .1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: .75rem 1rem;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-input);
+    font-size: .95rem;
+    font-family: inherit;
+    background: var(--color-input-bg);
+    color: var(--color-text);
+    transition: border-color .2s, box-shadow .2s;
+    width: 100%;
+}
+
+input::placeholder {
+    color: var(--color-placeholder) ;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-navy);
+    box-shadow: 0 0 0 3px rgba(26, 35, 126, .12);
+}
+
+input[aria-invalid="true"] {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, .1);
+}
+
+.field-error {
+    font-size: .8rem;
+    color: var(--color-error);
+    font-weight: 500;
+    min-height: 1em;
+}
+@media (max-width: 900px) {
+    .page-wrapper{
+        margin: 30px 0;
+    }
+    .reg-visual {
+        display: none;
+    }
+    .reg-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+
+    :root {
+        --section-pad: 48px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .reg-card {
+        padding: 1.5rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
