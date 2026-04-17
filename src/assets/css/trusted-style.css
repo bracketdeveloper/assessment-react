@@ -28,15 +28,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem; /* Tightens the space between buttons and track */
+    gap: 0.5rem;
     margin-top: 50px;
-    max-width: fit-content; /* Prevents the container from stretching full width */
+    max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
 .logos-track-wrapper {
-    width: min(700px, 80vw); /* Keeps track size consistent */
+    width: min(700px, 80vw);
     overflow: hidden;
 }
 
