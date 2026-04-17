@@ -11,6 +11,18 @@
     display: inline-block;
     margin-bottom: 1rem;
 }
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 90%;
+    height: 40px;
+    border: solid 4px;
+    border-color: var(--color-orange) transparent transparent transparent;
+    border-radius: 50% / 1px 15px 0 0;
+    transform: rotate(-2deg);
+}
 
 .logos-carousel {
     display: flex;
@@ -59,8 +71,5 @@
     cursor: pointer;
 }
 .carousel-btn:hover {
-    color: var(--color-white);
-    background-color: var(--color-carousel-btn);
     transform: scale(1.1);
-    border-radius: 50%;
 }

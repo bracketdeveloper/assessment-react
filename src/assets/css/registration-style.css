@@ -11,94 +11,14 @@
 
 .reg-visual {
     position: relative;
-    min-height: 430px;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-    background-image: url("../images/assistant-bot.png");
-    background-size: cover;
+    align-items: center;
+    min-height: 600px;
+    background-image: url("../images/assistant-bot 1.png");
+    background-size: contain;
     background-position: left center;
     background-repeat: no-repeat;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-.dot-orange {
-    background: var(--color-orange-dot);
-}
-
-.dot-blue {
-    background: var(--color-blue-dot);
-}
-
-.dot--picton-blue {
-    background: var(--color-picton-blue-dot);
-}
-
-.dot-yellow {
-    background: var(--color-yellow-dot);
-}
-
-.dot-cyan {
-    background: var(--color-cyan-dot);
-}
-
-.dot-black {
-    background: var(--color-black-dot);
-}
-
-.reg-dot-1 {
-    width: 20px;
-    height: 20px;
-    top: -5%;
-    left: 0;
-}
-
-.reg-dot-2 {
-    width: 30px;
-    height: 30px;
-    top: -10%;
-    right: 30%;
-}
-
-.reg-dot-3 {
-    width: 20px;
-    height: 20px;
-    top: 15%;
-    right: -5%;
-}
-
-.reg-dot-4 {
-    width: 30px;
-    height: 30px;
-    top: 75%;
-    right: 55%;
-}
-
-.reg-dot-5 {
-    width: 20px;
-    height: 20px;
-    bottom:-20%;
-    left: 35%;
-}
-
-.reg-dot-6 {
-    width: 30px;
-    height: 30px;
-    bottom: 25%;
-    right: 5%;
-}
-
-.reg-dot-7 {
-    width: 20px;
-    height: 20px;
-    bottom: 35%;
-    right: 20%;
-}
-.reg-dot-8 {
-    width: 20px;
-    height: 20px;
-    top: -15%;
-    right: 65%;
 }
 
 .reg-card {
@@ -114,7 +34,7 @@
 }
 
 .reg-card h2 {
-    color: var(--color-black-dot);
+    color: var(--color-black);
     font-size: 1.9rem;
     font-weight: 800;
     margin-bottom: .75rem;
@@ -141,7 +61,7 @@
 label {
     font-size: .9rem;
     font-weight: 600;
-    color: var(--color-black-dot);
+    color: var(--color-black);
 }
 
 .required {
@@ -186,9 +106,6 @@ input[aria-invalid="true"] {
 @media (max-width: 900px) {
     .page-wrapper{
         margin: 30px 0;
-    }
-    .reg-visual {
-        display: none;
     }
     .reg-grid {
         grid-template-columns: 1fr;

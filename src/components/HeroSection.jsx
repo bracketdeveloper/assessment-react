@@ -50,16 +50,7 @@ export default function HeroSection() {
                 </div>
 
                 <div className="hero-visual" aria-hidden="true">
-                    <div className="dot-container">
-                        <span className="dot dot-orange dot-1"></span>
-                        <span className="dot dot-blue dot-2"></span>
-                        <span className="dot dot-yellow dot-3"></span>
-                        <span className="dot dot-orange dot-4"></span>
-                        <span className="dot dot-cyan dot-5"></span>
-                        <span className="dot dot--picton-blue dot-6"></span>
-                        <span className="dot dot-blue dot-7"></span>
-                        <span className="dot dot-blue dot-8"></span>
-                    </div>
+
                 </div>
 
             </div>

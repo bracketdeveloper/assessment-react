@@ -10,10 +10,14 @@ function App() {
         <div className="page-wrapper">
             <Header/>
             <main id='main-content'>
-                <HeroSection/>
-                <FeatureSection/>
-                <TrustedBySection/>
-                <RegistrationComponent/>
+                <div className="first-bg">
+                    <HeroSection/>
+                    <FeatureSection/>
+                </div>
+                <div className="second-bg">
+                    <TrustedBySection/>
+                    <RegistrationComponent/>
+                </div>
             </main>
             <Footer/>
         </div>

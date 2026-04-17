@@ -35,7 +35,11 @@ export default function TrustedBySection() {
                         className="carousel-btn prev"
                         onClick={() => setCurrentIndex((prev) => (prev <= 0 ? totalItems - visibleItems : prev - 1))}
                     >
-                        ‹
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1L1 9L9 17" stroke="#F97C00" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+
                     </button>
 
                     <div className="logos-track-wrapper">
@@ -70,7 +74,11 @@ export default function TrustedBySection() {
                         className="carousel-btn next"
                         onClick={() => setCurrentIndex((prev) => (prev >= totalItems - visibleItems ? 0 : prev + 1))}
                     >
-                        ›
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L1 17" stroke="#F97C00" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+
                     </button>
                 </div>
             </div>

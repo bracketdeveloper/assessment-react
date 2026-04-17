@@ -12,12 +12,6 @@
     --color-royal-blue-light: #2338b0;
     --color-orange: #F97C00;
     --color-yellow: #FFB900;
-    --color-cyan-dot: #46B0E6;
-    --color-blue-dot: #1434CB;
-    --color-black-dot: #111;
-    --color-orange-dot: #F97C00;
-    --color-yellow-dot: #FFCF4D;
-    --color-picton-blue-dot: #5380EA;
     --color-text: #515151;
     --color-text-muted: #555;
     --color-highlight: #1434CB;
@@ -111,7 +105,18 @@ body {
     font-size: 1rem;
     box-shadow: var(--btn-shadow) ;
 }
-
+.first-bg{
+    background-image: url("../images/bg 1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.second-bg{
+    background-image: url("../images/bg 2.png");
+    background-size: contain;
+    background-position: 470% 100%;
+    background-repeat: no-repeat;
+}
 
 @media (max-width: 900px) {
     .page-wrapper{
@@ -122,9 +127,6 @@ body {
         gap: 2rem;
     }
 
-    .hero-visual {
-        display: none;
-    }
     .hero-text h1{
         text-align: center;
     }
@@ -137,9 +139,6 @@ body {
         border-bottom: 1px solid var(--color-border);
     }
 
-    .reg-visual {
-        display: none;
-    }
 }
 
 @media (max-width: 640px) {
@@ -191,12 +190,6 @@ body {
     .hero-text h1 {
         font-size: 1.75rem;
         text-align: center;
-    }
-    .hero-visual {
-        display: none;
-    }
-    .hero-visual .dot {
-        display: none;
     }
 
     .logo-item {

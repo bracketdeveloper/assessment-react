@@ -80,97 +80,10 @@
     justify-content: center;
     align-items: center;
     min-height: 600px;
-    background-image: url("../images/investment.png");
-    background-size: cover;
+    background-image: url("../images/investment 1.png");
+    background-size: contain;
     background-position: left center;
     background-repeat: no-repeat;
-}
-
-.dot {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.dot-orange {
-    background: var(--color-orange-dot);
-}
-
-.dot-blue {
-    background: var(--color-blue-dot);
-}
-
-.dot--picton-blue {
-    background: var(--color-picton-blue-dot);
-}
-
-.dot-yellow {
-    background: var(--color-yellow-dot);
-}
-
-.dot-cyan {
-    background: var(--color-cyan-dot);
-}
-
-.dot-black {
-    background: var(--color-black-dot);
-}
-
-.dot-1 {
-    width: 20px;
-    height: 20px;
-    top: -5%;
-    right: 25%;
-}
-
-.dot-2 {
-    width: 20px;
-    height: 20px;
-    top: 20%;
-    left: 5%;
-}
-
-.dot-3 {
-    width: 20px;
-    height: 20px;
-    top: 25%;
-    left: 110%;
-}
-
-.dot-4 {
-    width: 20px;
-    height: 20px;
-    top: 70%;
-    left: 100%;
-}
-
-.dot-5 {
-    width: 30px;
-    height: 30px;
-    top: 10%;
-    left: 30%;
-}
-
-.dot-6 {
-    width: 20px;
-    height: 20px;
-    bottom: -5%;
-    left: 10%;
-}
-
-.dot-7 {
-    width: 30px;
-    height: 30px;
-    bottom: -5%;
-    left: 55%;
-}
-
-.dot-8 {
-    width: 30px;
-    height: 30px;
-    top: 45%;
-    left: 100%;
 }
 @media (max-width: 900px) {
     .page-wrapper{
@@ -182,22 +95,9 @@
     }
 
     .hero-visual {
-        display: none;
     }
     .hero-text h1{
         text-align: center;
-    }
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .feature-item {
-        border-right: none;
-        border-bottom: 1px solid var(--color-border);
-    }
-
-    .reg-visual {
-        display: none;
     }
 }
 
@@ -208,12 +108,6 @@
     .hero-text h1 {
         font-size: 1.75rem;
         text-align: center;
-    }
-    .hero-visual {
-        display: none;
-    }
-    .hero-visual .dot {
-        display: none;
     }
 }
 
