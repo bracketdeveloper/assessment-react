@@ -1,14 +1,25 @@
+import React from 'react';
 
-const HeroTestimonialCard = ({image, name, description})=>{
+export default function HeroTestimonialCard({ image, name, description }) {
     return (
         <li className="testimonial-card">
-            <img src={image} alt={`Portrait of ${name}`} width="48" height="48"
-                 loading="lazy"/>
-            <div>
-                <p className="t-name">{name}</p>
-                <p className="t-body">{description}</p>
+            <div className="testimonial-avatar">
+                <img
+                    src={image}
+                    alt=""
+                    width="48"
+                    height="48"
+                    loading="lazy"
+                />
+            </div>
+            <div className="testimonial-content">
+                <p className="testimonial-name">
+                    <strong>{name}</strong>
+                </p>
+                <p className="testimonial-body">
+                    {description}
+                </p>
             </div>
         </li>
-    )
+    );
 }
-export default HeroTestimonialCard

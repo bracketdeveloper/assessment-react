@@ -2,7 +2,6 @@
     position: sticky;
     top: 0;
     z-index: 100;
-
 }
 
 .nav-inner {
@@ -14,7 +13,7 @@
 }
 
 .logo img {
-    width: 52px;
+    width: 78px;
     height: 40px;
 }
 
@@ -63,11 +62,25 @@
 .nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
+@media (max-width: 900px) {
+    .logo img {
+        width: 60px;
+        height: 31px;
+    }
+
+}
 @media (max-width: 640px) {
     :root {
         --section-pad: 48px 0;
     }
     .nav-toggle {
-        display: flex !important; /* Force display on mobile */
+        display: flex !important;
     }
+}
+@media (max-width: 450px) {
+    .logo img {
+        width: 40px;
+        height: 21px;
+    }
+
 }

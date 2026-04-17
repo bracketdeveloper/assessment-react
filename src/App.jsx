@@ -1,7 +1,7 @@
 import Header from "./components/Header.jsx";
-import HeroComponent from "./components/HeroComponent.jsx";
-import FeatureComponent from "./components/FeatureComponent.jsx";
-import TrustedByComponent from "./components/TrustedByComponent.jsx";
+import HeroSection from "./components/HeroSection.jsx";
+import FeatureSection from "./components/FeatureSection.jsx";
+import TrustedBySection from "./components/TrustedBySection.jsx";
 import RegistrationComponent from "./components/RegistrationComponent.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -10,9 +10,9 @@ function App() {
         <div className="page-wrapper">
             <Header/>
             <main id='main-content'>
-                <HeroComponent/>
-                <FeatureComponent/>
-                <TrustedByComponent/>
+                <HeroSection/>
+                <FeatureSection/>
+                <TrustedBySection/>
                 <RegistrationComponent/>
             </main>
             <Footer/>

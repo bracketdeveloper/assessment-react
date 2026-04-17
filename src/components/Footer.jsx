@@ -1,19 +1,28 @@
-import "../assets/css/footer-style.css"
-const Footer = ()=>{
+import "../assets/css/footer-style.css";
+
+export default function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer className="site-footer" role="contentinfo" id="contact">
+        <footer className="site-footer">
             <div className="container footer-inner">
-                <p className="copyright">Copyright &copy; 2026 i2c Inc. All rights reserved.</p>
+                <p className="copyright">
+                    Copyright &copy; {currentYear} i2c Inc. All rights reserved.
+                </p>
+
                 <nav aria-label="Footer navigation">
-                    <ul role="list" className="footer-links">
-                        <li><a href="#faqs">FAQs</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
-                        <li><a href="#other">Other</a></li>
-                        <li><a href="#contact" className="btn btn-primary">Contact us</a></li>
+                    <ul className="footer-links">
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Other</a></li>
+                        <li>
+                            <a href="" className="btn btn-primary">
+                                Contact us
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </footer>
-    )
+    );
 }
-export default Footer

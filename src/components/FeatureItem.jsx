@@ -1,15 +1,25 @@
-import Padlock from "../assets/images/padlock.png";
+import React from 'react';
 
-const FeatureItem = ({image, title, description})=>{
+export default function FeatureItem({ image, title, description }) {
     return (
         <article className="feature-item">
-            <div className="feature-icon" aria-hidden="true"><img className="padlock" src={image}
-                                                                  alt="padlock"/></div>
-            <div>
-                <h3><a href="#" className="feature-link">{title}</a></h3>
-                <p>{description}</p>
+            <div className="feature-icon" aria-hidden="true">
+                <img
+                    src={image}
+                    alt=""
+                    width="64"
+                    height="64"
+                    loading="lazy"
+                />
+            </div>
+            <div className="feature-content">
+                <h3 className="feature-title">
+                    {title}
+                </h3>
+                <p className="feature-description">
+                    {description}
+                </p>
             </div>
         </article>
-    )
+    );
 }
-export default FeatureItem

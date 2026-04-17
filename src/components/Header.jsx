@@ -1,26 +1,25 @@
-import { useState } from "react";
-import I2CLogo from "../assets/images/i2c-logo.png";
+import React, { useState } from "react";
+import logo from "../assets/images/i2c-logo.png";
 import "../assets/css/header-style.css";
 
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
+export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const toggleMenu = () => setMenuOpen(!menuOpen);
+    const closeMenu = () => setMenuOpen(false);
 
     return (
-        <header className="site-header" role="banner">
+        <header className="site-header">
             <div className="container nav-inner">
-                <a href="#" className="logo" aria-label="2C Home">
-                    <img src={I2CLogo} alt="i2c logo"/>
+                <a href="/" className="logo">
+                    <img src={logo} alt="i2c Logo"/>
                 </a>
 
                 <button
                     className="nav-toggle"
-                    id="navToggle"
-                    aria-label="Open navigation menu"
-                    aria-expanded={isOpen}
+                    aria-label="Toggle navigation"
+                    aria-expanded={menuOpen}
+                    aria-controls="primaryNav"
                     onClick={toggleMenu}
                 >
                     <span className="hamburger-bar"></span>
@@ -30,19 +29,20 @@ const Header = () => {
 
                 <nav
                     id="primaryNav"
-                    className={`primary-nav ${isOpen ? 'open' : ''}`}
-                    aria-label="Primary navigation"
+                    className={`primary-nav ${menuOpen ? "open" : ""}`}
                 >
-                    <ul role="list">
-                        <li><a href="#about" onClick={() => setIsOpen(false)}>About us</a></li>
-                        <li><a href="#registration" onClick={() => setIsOpen(false)}>Registration</a></li>
-                        <li><a href="#careers" onClick={() => setIsOpen(false)}>Careers</a></li>
-                        <li><a href="#contact" className="btn btn-primary" onClick={() => setIsOpen(false)}>Contact us</a></li>
+                    <ul className="nav-list">
+                        <li><a href=""onClick={closeMenu}>About us</a></li>
+                        <li><a href=""onClick={closeMenu}>Registration</a></li>
+                        <li><a href=""onClick={closeMenu}>Careers</a></li>
+                        <li>
+                            <a href=""className="btn btn-primary" onClick={closeMenu}>
+                                Contact us
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
     );
-};
-
-export default Header;
+}

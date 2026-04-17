@@ -8,8 +8,8 @@
     --color-bg: #e8ecf5;
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-navy: #1434CB;
-    --color-navy-light: #2338b0;
+    --color-royal-blue: #1434CB;
+    --color-royal-blue-light: #2338b0;
     --color-orange: #F97C00;
     --color-yellow: #FFB900;
     --color-cyan-dot: #46B0E6;
@@ -21,12 +21,14 @@
     --color-text: #515151;
     --color-text-muted: #555;
     --color-highlight: #1434CB;
-    --color-error: #d32f2f;
+    --color-error: #EB5939;
     --color-border: #dde1ef;
+    --color-input-focus-border: #4a6cf7;
     --color-input-bg: #f7f8fc;
     --color-feature-link: #FF6B00;
     --color-carousel-btn: #F97C00;
     --color-placeholder:#aaa;
+    --color-submited-form-heading:#057D21;
 
 
     --testimonial-shadow: linear-gradient(180deg, #F6FBF8 0%, #F6FBF8 0.01%, rgba(246, 251, 248, 0) 100%);
@@ -38,14 +40,15 @@
     --btn-shadow:0px 10px 34px rgba(20, 52, 203, 0.5);
     --shadow-card: 0 4px 24px rgba(30, 40, 100, .08);
     --font-main: 'Inter', system-ui, -apple-system, Arial, sans-serif;
+    --input-focus-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
+    --input-error-shadow: 0 0 0 3px rgba(211, 47, 47, .1);
 
 
     --container-max: 1140px;
-    --section-pad: 80px 0;
+    --section-pad: 50px 0;
 }
 
 html {
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -61,7 +64,7 @@ body {
     margin: 50px 0;
 }
 
-/* ── Layout ──────────────────────────────────────── */
+
 .container {
     width: min(var(--container-max), 100% - 2rem);
     margin-inline: auto;
@@ -84,6 +87,7 @@ body {
 
 .btn:hover {
     transform: translateY(-1px);
+    text-decoration: none !important;
 }
 
 .btn:active {
@@ -91,14 +95,14 @@ body {
 }
 
 .btn-primary {
-    background: var(--color-navy);
+    background: var(--color-royal-blue);
     color: var(--color-white) !important;
     font-weight: 600 !important;
     box-shadow: var(--btn-shadow);
 }
 
 .btn-primary:hover {
-    background: var(--color-navy-light);
+    background: var(--color-royal-blue-light);
 }
 
 .btn-block {
@@ -147,7 +151,6 @@ body {
         margin: 20px 0;
     }
 
-    /* Mobile Nav Logic */
     .nav-toggle {
         display: flex;
         z-index: 200;
@@ -158,14 +161,13 @@ body {
         top: 0;
         right: 0;
         width: 75%;
-        height: 100vh; /* Changed to vh to ensure it covers full screen height */
+        height: 100vh;
         transform: translateX(100%);
         background: white;
         padding: 5rem 2rem;
         transition: transform .3s ease;
         z-index: 150;
 
-        /* New properties to ensure full coverage */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -179,7 +181,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
-        width: 100%; /* Ensures list items take up width */
+        width: 100%;
     }
 
     .primary-nav ul li {

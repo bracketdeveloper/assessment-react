@@ -22,12 +22,28 @@
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.reg-illustration {
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-    font-size: 6rem;
-    line-height: 1;
+.dot-orange {
+    background: var(--color-orange-dot);
+}
+
+.dot-blue {
+    background: var(--color-blue-dot);
+}
+
+.dot--picton-blue {
+    background: var(--color-picton-blue-dot);
+}
+
+.dot-yellow {
+    background: var(--color-yellow-dot);
+}
+
+.dot-cyan {
+    background: var(--color-cyan-dot);
+}
+
+.dot-black {
+    background: var(--color-black-dot);
 }
 
 .reg-dot-1 {
@@ -103,6 +119,9 @@
     font-weight: 800;
     margin-bottom: .75rem;
 }
+.submitted-heading{
+    color: var(--color-submited-form-heading) !important;
+}
 
 .reg-desc {
     font-size: .9rem;
@@ -149,13 +168,13 @@ input::placeholder {
 
 input:focus {
     outline: none;
-    border-color: var(--color-navy);
-    box-shadow: 0 0 0 3px rgba(26, 35, 126, .12);
+    border-color: var(--color-input-focus-border);
+    box-shadow: var(--input-focus-shadow);
 }
 
 input[aria-invalid="true"] {
     border-color: var(--color-error);
-    box-shadow: 0 0 0 3px rgba(211, 47, 47, .1);
+    box-shadow: var(--input-error-shadow);
 }
 
 .field-error {
